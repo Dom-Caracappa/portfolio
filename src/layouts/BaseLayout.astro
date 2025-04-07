@@ -1,18 +1,21 @@
 ---
+import GlobeAssembly from "../components/GlobeAssembly.tsx";
 import Navbar from "../components/Navbar.astro";
-const { title = "DomWrites" } = Astro.props;
 ---
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
+    <title>DomWrites</title>
   </head>
-  <body class="bg-zinc-950 text-zinc-100 font-sans min-h-screen">
-    <main class="max-w-5xl mx-auto px-6 py-10">
+  <body class="bg-lime-400 text-white font-sans min-h-screen flex flex-col items-center">
+    <main class="w-full max-w-5xl px-6 py-10 flex flex-col items-center gap-6">
+      <GlobeAssembly client:only="react" />
+
+      <!-- ✅ Move Navbar here -->
       <Navbar />
+
       <slot />
     </main>
   </body>

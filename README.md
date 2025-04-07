@@ -1,48 +1,97 @@
-# Astro Starter Kit: Basics
+---
 
-```sh
-pnpm create astro@latest -- --template basics
+### 🧾 pnpm Workflow Cheat Sheet
+
+This project uses [`pnpm`](https://pnpm.io/) as its package manager for faster, safer dependency handling. Here's the workflow we follow for both development and deployment:
+
+---
+
+#### 🌱 Local Development
+
+```bash
+pnpm install
+```
+Install everything listed in `package.json`, updating `pnpm-lock.yaml` as needed.
+
+```bash
+pnpm add package-name
+```
+Add a runtime dependency.
+
+```bash
+pnpm add -D package-name
+```
+Add a dev-only dependency (e.g. Tailwind, Astro plugins).
+
+```bash
+pnpm remove package-name
+```
+Remove a package cleanly.
+
+```bash
+pnpm dev
+```
+Start the local dev server.
+
+```bash
+pnpm build
+```
+Generate the production `dist/` folder.
+
+---
+
+#### 🧊 Lockfile Safety
+
+```bash
+pnpm install --frozen-lockfile
+```
+Use this to install **only** what’s already defined in `pnpm-lock.yaml`.  
+⚠️ Prevents accidental upgrades or surprises.
+
+> 💡 Use this in **deployments**, **CI/CD**, or when cloning the repo to a new machine.
+
+---
+
+#### 🚀 Deployment Commands
+
+In production (e.g. Netlify, DigitalOcean, CI tools), use:
+
+```bash
+pnpm install --frozen-lockfile && pnpm run build
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+This ensures:
+- All dependencies are exact
+- Lockfile is respected
+- No version drift between dev and prod
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+#### 🧼 Cleanup & Maintenance
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+pnpm install --force
 ```
+Clean reinstall from scratch — good for weird local issues.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+```bash
+pnpm update package-name
+```
+Update a specific package (within its version range).
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+#### 📁 Important Files
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| File              | Purpose                            |
+|-------------------|------------------------------------|
+| `package.json`    | Declares what the project needs    |
+| `pnpm-lock.yaml`  | Freezes the exact versions installed |
+| `.env`            | Environment variables (e.g. `NODE_ENV`) |
+| `node_modules/`   | Actual installed packages (symlinked) |
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+> 👽 *"This project has been hardened against Tailwind v4 breakage and other dependency chaos. You’re safe here."*
+
+---
