@@ -1,33 +1,47 @@
+import React, { useRef, useMemo } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import * as THREE from "three";
 
-// src/components/Globe.tsx
-import { Canvas, useFrame } from '@react-three/fiber';
-import { useRef } from 'react';
-import { Mesh } from 'three';
+const WireframeGlobe = () => {
+  const groupRef = useRef<THREE.Group>(null);
+  const { viewport } = useThree();
 
-function SpinningGlobe() {
-  const meshRef = useRef<Mesh>(null!);
+  const globeRadius = viewport.width < 6 ? 1.0 : 1.8;
 
-  useFrame(() => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += 0.01;
-      meshRef.current.rotation.x += 0.002;
+  const edges = useMemo(() => {
+    const sphere = new THREE.SphereGeometry(globeRadius, 16, 16);
+    return new THREE.EdgesGeometry(sphere);
+  }, [globeRadius]);
+
+  useFrame((_, delta) => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += delta * 0.4;
     }
   });
 
   return (
-    <mesh ref={meshRef} scale={2}>
-      <sphereGeometry args={[1, 32, 32]} />
-      <meshBasicMaterial wireframe color="black" />
-    </mesh>
-  );
-}
+    <>
+      <ambientLight intensity={viewport.width < 6 ? 1.5 : 1} />
+      <directionalLight position={[5, 5, 5]} intensity={2} />
 
-export default function Globe() {
-  return (
-    <div className="aspect-square w-[25vw] min-w-[96px] max-w-[180px] md:max-w-[240px]">
-      <Canvas camera={{ position: [0, 0, 5] }}>
-        <SpinningGlobe />
-      </Canvas>
-    </div>
+      <group ref={groupRef} scale={0.7}>
+        <lineSegments geometry={edges}>
+          <lineBasicMaterial color="black" />
+        </lineSegments>
+      </group>
+    </>
   );
-}
+};
+
+const Globe = () => {
+  return (
+    <Canvas 
+    style={{ width: "100%", height: "100%" }}
+  camera={{ position: [0, 0, 2.2], fov: 50 }}
+    >
+      <WireframeGlobe />
+    </Canvas>
+  );
+};
+
+export default Globe;

@@ -1,7 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero";
 ---
 
+
 <BaseLayout>
-  <h1 class="text-2xl text-center mt-10">Hello from Index!</h1>
+  <Hero client:only="react" />
 </BaseLayout>
+
+
+
