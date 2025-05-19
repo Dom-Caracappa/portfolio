@@ -10,7 +10,8 @@ export default function Hero() {
   const links = [
     { name: "Home", href: "/" },
     { name: "About", href: "#about" },
-    { name: "My Work", href: "/work" },
+    { name: "Projects", href: "#projects" },
+    { name: "Docs-as-Code", href: "/docs" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -26,7 +27,7 @@ export default function Hero() {
         {/* Nameplate */}
         <div className="text-center md:text-left px-4 py-4 rounded-md ">
           <h1 className="ml-6 font-bold text-white text-3xl">Dom Caracappa</h1>
-          <p className="mt-6 ml-6 text-2xl text-white">
+          <p className="mt-6 text-2xl text-white">
             The TECH Writer
           </p>
         </div>

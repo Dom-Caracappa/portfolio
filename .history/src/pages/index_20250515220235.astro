@@ -3,16 +3,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero";
 import Home from "../components/Home";
 import About from "../components/About";
-import WorkSection from "../components/WorkSection";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 ---
 
 <BaseLayout>
   <Hero client:only="react" />
   <Home client:only="react" />
   <About client:only="react" />
-  <WorkSection client:load />
-  <Contact client:only="react" />
-  <Footer client:only="react" />
+  <ProjectsSection previewOnly={true} client:load />
 </BaseLayout>

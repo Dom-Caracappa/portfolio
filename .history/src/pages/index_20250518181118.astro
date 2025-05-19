@@ -6,7 +6,6 @@ import About from "../components/About";
 import WorkSection from "../components/WorkSection";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
----
 
 <BaseLayout>
   <Hero client:only="react" />
@@ -15,4 +14,5 @@ import Footer from "../components/Footer";
   <WorkSection client:load />
   <Contact client:only="react" />
   <Footer client:only="react" />
-</BaseLayout>
+</BaseLayout>;
+---

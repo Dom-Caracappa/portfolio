@@ -10,7 +10,7 @@ export default function Hero() {
   const links = [
     { name: "Home", href: "/" },
     { name: "About", href: "#about" },
-    { name: "My Work", href: "/work" },
+    { name: "Work", href: "/work" },
     { name: "Contact", href: "#contact" },
   ];
 

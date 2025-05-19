@@ -1,0 +1,33 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+
+// src/pages/projects/thermal-battery-docs.astro
+---
+
+<BaseLayout>
+    <section class="max-w-3xl mx-auto px-6 py-20 text-white">
+        <h1 class="text-4xl font-bold mb-6">Thermal Battery Assembly Docs</h1>
+
+        <p class="mb-4 text-slate-300">
+            This documentation suite was developed to support the manufacturing
+            process of industrial-scale thermal batteries. The content includes
+            operator-friendly work instructions, safety callouts, and
+            revision-controlled documents used across multiple stations.
+        </p>
+
+        <p class="mb-4 text-slate-300">
+            This sample is based on real industry work, with all proprietary
+            details removed or abstracted. It reflects a documentation approach
+            focused on scalability, clarity, and safety in a high-stakes
+            industrial environment.
+        </p>
+
+        <a
+            href="/pdfs/thermal-battery-assembly-sop.pdf"
+            class="inline-block bg-white text-black font-semibold px-5 py-2 rounded hover:bg-slate-200 transition mt-6"
+            download
+        >
+            Download PDF Sample
+        </a>
+    </section>
+</BaseLayout>
