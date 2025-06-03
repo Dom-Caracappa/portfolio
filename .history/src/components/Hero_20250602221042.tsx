@@ -14,20 +14,20 @@ export default function Hero() {
   return (
     <div className="flex flex-col items-center justify-center w-full bg-slate-600">
       {/* Responsive branding section */}
-      <div className="bg-slate-500 p-2 rounded-md mt-8 mb-2 flex flex-col md:flex-row items-center gap-4">
+      <div className="bg-slate-500 p-2 rounded-md mt-8 mb-2 flex flex-col md:flex-row items-center gap-2">
         {/* Responsive logos */}
-        <div className="text-center md:text-left px-2 py-2 rounded-md">
+        <div className="text-center md:text-left px-4 py-4 rounded-md">
           {/* Large logo for desktop */}
           <img
             src="/src/assets/logo-lg-white.png"
             alt="Dom Caracappa | TECH WRITER"
-            className="hidden md:block w-auto max-w-xl mx-auto md:mx-0"
+            className="hidden md:block w-auto max-w-lg mx-auto md:mx-0"
           />
           {/* Small logo for mobile */}
           <img
             src="/src/assets/logo-sm-white.png"
             alt="Dom Caracappa | TECH WRITER"
-            className="block md:hidden w-80 mx-auto"
+            className="block md:hidden w-40 mx-auto"
           />
         </div>
       </div>

@@ -1,5 +1,8 @@
-// src/components/Hero.tsx
+// Hero.tsx
+// Mobile-first responsive hero layout with a horizontal shift on larger screens
+
 import { useState } from "react";
+import Globe from "./Globe";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,23 +15,20 @@ export default function Hero() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center w-full bg-slate-600">
+    <div className=" flex-col items-center justify-center w-full bg-slate-600">
       {/* Responsive branding section */}
-      <div className="bg-slate-500 p-2 rounded-md mt-8 mb-2 flex flex-col md:flex-row items-center gap-4">
-        {/* Responsive logos */}
-        <div className="text-center md:text-left px-2 py-2 rounded-md">
-          {/* Large logo for desktop */}
-          <img
-            src="/src/assets/logo-lg-white.png"
-            alt="Dom Caracappa | TECH WRITER"
-            className="hidden md:block w-auto max-w-xl mx-auto md:mx-0"
-          />
-          {/* Small logo for mobile */}
-          <img
-            src="/src/assets/logo-sm-white.png"
-            alt="Dom Caracappa | TECH WRITER"
-            className="block md:hidden w-80 mx-auto"
-          />
+      <div className="bg-s late-500 p-4 rounded-md mt-8 mb-2 flex flex-col md:flex-row items-center gap-4">
+        {/* Globe logo
+        <div className="w-40 h-40">
+          <Globe />
+        </div> */}
+
+        {/* Nameplate */}
+        <div className="text-center md:text-left px-4 py-4 rounded-md ">
+          <h1 className="ml-6 font-bold text-white text-3xl">Dom Caracappa</h1>
+          <p className="mt-6 ml-6 text-2xl text-white">
+            The TECH Writer
+          </p>
         </div>
       </div>
 

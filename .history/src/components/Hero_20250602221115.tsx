@@ -21,13 +21,13 @@ export default function Hero() {
           <img
             src="/src/assets/logo-lg-white.png"
             alt="Dom Caracappa | TECH WRITER"
-            className="hidden md:block w-auto max-w-xl mx-auto md:mx-0"
+            className="hidden md:block w-auto max-w-2lg mx-auto md:mx-0"
           />
           {/* Small logo for mobile */}
           <img
             src="/src/assets/logo-sm-white.png"
             alt="Dom Caracappa | TECH WRITER"
-            className="block md:hidden w-80 mx-auto"
+            className="block md:hidden w-40 mx-auto"
           />
         </div>
       </div>

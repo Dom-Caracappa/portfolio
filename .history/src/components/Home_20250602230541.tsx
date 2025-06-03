@@ -2,7 +2,7 @@
 
 export default function Home() {
     return (
-        <section id="home" className="max-w-3xl mx-auto px-6 py-8 text-white">
+        <section id="home" className="max-w-3xl mx-auto px-6 py-80 text-white">
             <p className="text-lg font-sans text-slate-400 mb-4">
                 <span className="text-5xl float-left leading-none mr-3 font-bold text-white font-sans drop-cap-style">
                     H

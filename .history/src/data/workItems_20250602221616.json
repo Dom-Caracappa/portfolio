@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Docs-as-Code Starter Kit",
+        "description": "Markdown-driven documentation repo with CI and modular content structure in MKDocs-Material.",
+        "link": "https://dom-caracappa.github.io/docs-as-code-starter",
+        "tags": [
+            "docs",
+            "markdown",
+            "CI/CD"
+        ]
+    },
+    {
+        "title": "FastAPI Docs Example",
+        "description": "This project is a test environment to learn API documentation with FastAPI and Sphinx.",
+        "link": "https://dom-caracappa.github.io/fastapi-docs-starter/",
+        "tags": [
+            "fastapi",
+            "reStructuredText",
+            "sphinx"
+        ]
+    }
+]

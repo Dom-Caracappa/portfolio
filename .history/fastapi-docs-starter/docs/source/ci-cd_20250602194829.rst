@@ -1,0 +1,64 @@
+CI/CD Deployment
+=================
+
+This project uses GitHub Actions to automatically build and deploy the Sphinx-generated documentation to GitHub Pages.
+
+How it works
+-------------
+
+- **Trigger:** Every time changes are pushed to the ``main`` branch, GitHub Actions runs a workflow.
+- **Workflow file:** The workflow configuration is defined in ``.github/workflows/deploy.yml``.
+- **Steps:**
+  1. Checkout the repository.
+  2. Set up Python and install dependencies (``requirements.txt``).
+  3. Build the Sphinx HTML documentation in ``docs/``.
+  4. Deploy the generated HTML files to the ``gh-pages`` branch using ``ghp-import``.
+
+Deployment target
+------------------
+
+The documentation is hosted on GitHub Pages and can be viewed at:
+
+.. code-block:: text
+
+    https://dom-caracappa.github.io/fastapi-docs-starter/
+
+Key commands
+-------------
+
+- Build the documentation locally:
+
+  .. code-block:: bash
+
+      cd docs
+      make clean && make html
+
+- Deploy the documentation manually:
+
+  .. code-block:: bash
+
+      ghp-import -n -p -f docs/build/html
+
+  This pushes the built HTML files to the ``gh-pages`` branch.
+
+Live preview
+-------------
+
+The ``gh-pages`` branch is configured in the repository settings to serve the documentation site.
+
+.. note::
+
+    GitHub Pages automatically updates whenever the ``gh-pages`` branch is updated.
+
+Pushing changes
+----------------
+
+After updating the documentation or any source files, push the changes to the ``main`` branch to trigger the CI/CD deployment:
+
+.. code-block:: bash
+
+    git add .
+    git commit -m "Describe your changes"
+    git push origin main
+
+This will automatically rebuild and deploy the updated documentation site.
