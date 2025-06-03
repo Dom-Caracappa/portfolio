@@ -19,7 +19,7 @@ export default function WorkSection() {
         },
         {
             title: "Docs-as-Code Starter Kit",
-            description: "Markdown-driven documentation repo with CI and modular content structure in MKDocs-Material.",
+            description: "Markdown-driven documentation repo with CI and modular content structure.",
             link: "https://dom-caracappa.github.io/docs-as-code-starter",
             tag: "docs" as const,
         },

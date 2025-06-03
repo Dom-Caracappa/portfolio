@@ -1,0 +1,5 @@
+div.py.function {
+    margin-bottom: 2em;   /* Adds extra spacing between endpoint entries */
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ddd;  /* Light gray border to visually separate */
+}

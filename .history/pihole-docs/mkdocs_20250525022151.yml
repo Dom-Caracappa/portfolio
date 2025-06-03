@@ -1,0 +1,32 @@
+site_name: Pi-hole Setup & Operation Guide
+
+nav:
+  - Home: index.md
+  - Prep SD Card: prepSD.md
+  - Assembly: assembly.md
+  - Install: install.md
+  - Maintenance: maintenance.md
+  - Parts: parts.md
+  - Troubleshooting: troubleshooting.md
+  - UI Overview: ui.md
+
+theme:
+  name: material
+  features:
+    - content.images.preview  # enables image zoom/lightbox
+
+markdown_extensions:
+  - admonition
+  - attr_list               # allows { width=250 } on images
+  - md_in_html              # allows Markdown inside <div> blocks
+
+# Optional but explicit
+docs_dir: docs
+
+# Pretty zoomy images
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js
+

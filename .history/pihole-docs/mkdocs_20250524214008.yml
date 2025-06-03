@@ -1,0 +1,17 @@
+site_name: Pi-hole Setup & Operation Guide
+nav:
+  - Home: index.md
+  - Assembly: assembly.md
+  - Install: install.md
+  - Maintenance: maintenance.md
+  - Parts: parts.md
+  - Troubleshooting: troubleshooting.md
+  - UI Overview: ui.md
+theme:
+  name: readthedocs
+  highlightjs: true
+  nav_style: light
+markdown_extensions:
+  - admonition
+  
+

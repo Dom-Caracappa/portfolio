@@ -1,0 +1,73 @@
+site_name: Docs-as-Code Starter Kit
+site_description: A lightweight example of modern documentation workflows using MkDocs, GitHub Actions, and GitHub Pages.
+site_url: https://dom-caracappa.github.io/docs-as-code-starter/
+repo_url: https://github.com/Dom-Caracappa/docs-as-code-starter
+repo_name: dom-caracappa/docs-as-code-starter
+
+theme:
+  name: material
+  logo: assets/logo.png  # Optional – remove if not used
+  favicon: assets/favicon.ico  # Optional – remove if not used
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.annotate
+    - content.tabs.link
+  palette:
+  - scheme: default
+    primary: slate
+    accent: lime
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+  - scheme: slate
+    primary: slate
+    accent: lime
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
+  font:
+    text: Inter
+    code: Fira Code
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: install.md
+      - Structure: structure.md
+  - Customization: customize.md
+  - CI/CD:
+      - CI/CD with GitHub Actions: ci-cd.md
+      - Deployment: deploy.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - tables
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true

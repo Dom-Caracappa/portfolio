@@ -1,0 +1,9 @@
+site_name: My Docs
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: install.md
+      - Structure: structure.md
+  - Customization: customize.md
+  - CI/CD with GitHub Actions: ci-cd.md
+  - Deployment: deploy.md
