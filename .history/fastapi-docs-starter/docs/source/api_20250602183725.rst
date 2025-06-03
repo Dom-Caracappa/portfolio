@@ -1,0 +1,13 @@
+API Reference
+=============
+
+.. automodule:: app.main
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+.. note::
+
+   In addition to these static API docs, the FastAPI application automatically generates dynamic, interactive documentation
+   using **Swagger UI** at `/docs` and **ReDoc** at `/redoc`. These interfaces allow developers to explore and test API endpoints live.
