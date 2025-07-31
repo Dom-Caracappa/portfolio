@@ -24,11 +24,9 @@ const tagStyles: Record<string, { color: string; label?: string }> = {
     hardware: { color: "text-amber-400", label: "Hardware" },
     redocly: { color: "text-cyan-400", label: "Redocly" },
     openapi: { color: "text-sky-400", label: "OpenAPI" },
-    "Pi-hole": { color: "text-gray-700", label: "Pi-hole" },
-    "Network Security": { color: "text-red-600", label: "Network Security" },
-    "Raspberry Pi": { color: "text-pink-800", label: "Raspberry Pi" }
-
-
+    "Pi-hole": "bg-gray-700 text-white",
+    "Network Security": "bg-slate-600 text-white",
+    "Ad Blocking": "bg-gray-500 text-white",
 };
 
 export default function WorkCard({
