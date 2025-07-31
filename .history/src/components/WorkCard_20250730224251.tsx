@@ -26,7 +26,7 @@ const tagStyles: Record<string, { color: string; label?: string }> = {
     openapi: { color: "text-sky-400", label: "OpenAPI" },
     "Pi-hole": { color: "text-emerald-600", label: "Pi-hole" },
     "Network Security": { color: "text-red-600", label: "Network Security" },
-    "Raspberry Pi": { color: "text-rose-500", label: "Raspberry Pi" }
+    "Raspberry Pi": { color: "text-pink-800", label: "Raspberry Pi" }
 
 
 };
