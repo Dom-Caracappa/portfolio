@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Docs-as-Code Starter Kit",
+        "description": "Markdown-driven documentation repo with CI and modular content structure in MKDocs-Material.",
+        "link": "https://dom-caracappa.github.io/docs-as-code-starter",
+        "tags": [
+            "docs",
+            "markdown",
+            "CI/CD"
+        ],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "FastAPI Docs Example",
+        "description": "This project is a test environment to learn API documentation with FastAPI and Sphinx.",
+        "link": "https://dom-caracappa.github.io/fastapi-docs-starter/",
+        "tags": [
+            "fastapi",
+            "reStructuredText",
+            "sphinx"
+        ],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Pi-Hole Setup",
+        "description": "A quick guide to creating a Pi-Hole for your home network.",
+        "link": "https://dom-caracappa.github.io/pi-hole-setup/",
+        "tags": [
+            "Pi-hole",
+            "Network Security",
+            "Raspberry Pi"
+        ],
+        "date": "2025-07-30"
+    }
+]
