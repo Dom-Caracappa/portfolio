@@ -54,5 +54,5 @@ const Footer: React.FC = () => {
         </section>
     );
 };
-
+{/* Portfolio infrastructure test — September 2026 */}
 export default Footer;
