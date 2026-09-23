@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="civicgrid_overview" path="concepts/civicgrid-500-overview.html"/>
+   <appContext helpID="system_architecture" path="concepts/system-architecture.html"/>
+   <appContext helpID="major_subsystems" path="concepts/major_subsystems.html"/>
+   <appContext helpID="respond_to_loss_of_utility_power"
+               path="tasks/respond_to_loss_of_utility_power.html"/>
+   <appContext helpID="civicgrid_500_operating_modes"
+               path="references/civicgrid_500_operating_modes.html"/>
+</map>
