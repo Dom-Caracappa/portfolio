@@ -1,0 +1,67 @@
+
+*[class~="topic/note"]:not([class~="hazard-d/hazardstatement"]) {
+  border: 1px solid;
+  border-radius: 11px;
+}
+
+/*notes-content-two-lines*/
+span.note__title {
+  display: block;
+}
+
+/*notes-colors-colorful*/
+*[class~="topic/note"]:not([class~="hazard-d/hazardstatement"]) {
+  background-color: rgba(0, 120, 160, 0.09);
+  border-color: #0078A0;
+}
+*[class~="topic/note"].note_danger,
+*[class~="topic/note"].note_caution {
+  background-color: rgba(255, 202, 45, 0.1);
+  border-color: #606060;
+}
+*[class~="topic/note"].note_warning,
+*[class~="topic/note"].note_attention,
+*[class~="topic/note"].note_important {
+  background-color: rgba(255, 202, 45, 0.1);
+  border-color: #FFCA2D;
+}
+*[class~="topic/note"].note_restriction {
+  background-color: rgba(255, 52, 45, 0.1);
+  border-color: #FF342D;
+}
+/* CivicGrid audience selector */
+.wh_header .wh_logo_and_publication_title_container .civicgrid-audience {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.wh_header .wh_logo_and_publication_title_container .civicgrid-audience-badge {
+    display: inline-block !important;
+    padding: 4px 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    border-radius: 4px !important;
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.10) !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.06em !important;
+    line-height: 1.4 !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+}
+
+.wh_header .wh_logo_and_publication_title_container a.civicgrid-audience-switch {
+    color: rgba(255, 255, 255, 0.78) !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+}
+
+.wh_header .wh_logo_and_publication_title_container a.civicgrid-audience-switch:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}

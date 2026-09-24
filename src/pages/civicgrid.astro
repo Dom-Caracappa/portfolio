@@ -1,0 +1,269 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+    <section class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+
+        <div class="max-w-4xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-4">
+                Technical Writing · Structured Authoring · DITA
+            </p>
+
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+                CivicGrid 500 Documentation System
+            </h1>
+
+            <p class="text-xl md:text-2xl text-slate-300 leading-relaxed mb-6">
+                A DITA-based technical documentation prototype for a fictional
+                industrial energy system.
+            </p>
+
+            <div class="border border-slate-600 bg-slate-900/60 rounded-lg px-5 py-4 mb-10">
+                <p class="text-slate-200">
+                    <strong>The product is fictional.</strong>
+                    The documentation architecture, structured source,
+                    reusable content model, publishing workflow, and WebHelp
+                    outputs are the work sample.
+                </p>
+            </div>
+        </div>
+
+        <!-- Documentation editions -->
+        <div class="grid md:grid-cols-2 gap-6 mb-16">
+
+            <a
+                href="/civicgrid/operator/"
+                class="group border border-slate-600 rounded-xl p-7 bg-slate-900/50 hover:bg-slate-800 transition"
+            >
+                <p class="text-xs uppercase tracking-[0.16em] text-slate-400 mb-3">
+                    Publication
+                </p>
+                <h2 class="text-2xl font-semibold mb-3">
+                    Operator Documentation
+                </h2>
+                <p class="text-slate-300 leading-relaxed mb-5">
+                    Audience-filtered WebHelp publication focused on
+                    system operation, monitoring, and operator response.
+                </p>
+                <span class="font-semibold text-white group-hover:text-slate-200">
+                    Open Operator Documentation →
+                </span>
+            </a>
+
+            <a
+                href="/civicgrid/installer/"
+                class="group border border-slate-600 rounded-xl p-7 bg-slate-900/50 hover:bg-slate-800 transition"
+            >
+                <p class="text-xs uppercase tracking-[0.16em] text-slate-400 mb-3">
+                    Publication
+                </p>
+                <h2 class="text-2xl font-semibold mb-3">
+                    Installer Documentation
+                </h2>
+                <p class="text-slate-300 leading-relaxed mb-5">
+                    Audience-filtered WebHelp publication demonstrating
+                    role-specific content delivery from the same source.
+                </p>
+                <span class="font-semibold text-white group-hover:text-slate-200">
+                    Open Installer Documentation →
+                </span>
+            </a>
+
+        </div>
+
+        <!-- What this demonstrates -->
+        <section class="mb-16">
+            <div class="max-w-3xl mb-8">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-3">
+                    What this demonstrates
+                </p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Documentation as a system
+                </h2>
+                <p class="text-slate-300 leading-relaxed">
+                    The project treats documentation as an information system
+                    rather than a collection of standalone documents.
+                    Content is modeled, structured, reused, filtered, and
+                    assembled into audience-specific publications.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <article class="border border-slate-700 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">
+                        Structured authoring
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        DITA topics, maps, XML source, information typing,
+                        controlled relationships, and publication-oriented
+                        content organization.
+                    </p>
+                </article>
+
+                <article class="border border-slate-700 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">
+                        Reusable content
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Canonical component definitions using
+                        <code>conref</code> and <code>conkeyref</code>,
+                        plus DITA keys and key references for controlled
+                        terminology.
+                    </p>
+                </article>
+
+                <article class="border border-slate-700 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">
+                        Audience-specific publishing
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        A shared DITA source produces separate Operator and
+                        Installer publications through profiling and
+                        conditional processing.
+                    </p>
+                </article>
+
+                <article class="border border-slate-700 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">
+                        Publication engineering
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Custom Oxygen WebHelp Responsive templates, XHTML
+                        fragments, CSS customization, responsive presentation,
+                        and cross-publication navigation.
+                    </p>
+                </article>
+
+                <article class="border border-slate-700 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">
+                        Documentation architecture
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        System decomposition, information requirements,
+                        audience and task analysis, reusable information
+                        modeling, and documentation gap identification.
+                    </p>
+                </article>
+
+                <article class="border border-slate-700 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">
+                        Delivery model
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        One structured source can support multiple publications
+                        without duplicating the underlying content.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="mb-16">
+            <div class="max-w-3xl mb-8">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-3">
+                    System model
+                </p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    CivicGrid 500 architecture
+                </h2>
+                <p class="text-slate-300 leading-relaxed">
+                    The documentation set begins with a system-level model
+                    separating the physical power system from the control and
+                    information system.
+                </p>
+            </div>
+
+            <figure class="border border-slate-700 rounded-xl bg-slate-900/40 p-4 md:p-6">
+                <img
+                    src="/civicgrid/operator/media/civicgrid_system_diagram.png"
+                    alt="CivicGrid 500 system architecture showing physical power and control and information layers"
+                    class="w-full rounded-lg"
+                />
+                <figcaption class="text-sm text-slate-400 mt-4">
+                    High-level conceptual architecture used to orient the
+                    documentation model. Solid lines represent power flow;
+                    dashed lines represent control and information flow.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Method -->
+        <section class="mb-16">
+            <div class="max-w-3xl mb-8">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-3">
+                    Documentation workflow
+                </p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    From system understanding to published content
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-4">
+
+                <div class="border border-slate-700 rounded-lg p-5">
+                    <p class="text-sm font-semibold text-slate-400 mb-2">01</p>
+                    <h3 class="font-semibold mb-2">Orient</h3>
+                    <p class="text-sm text-slate-300">
+                        Establish system purpose, architecture, boundaries,
+                        terminology, and operating context.
+                    </p>
+                </div>
+
+                <div class="border border-slate-700 rounded-lg p-5">
+                    <p class="text-sm font-semibold text-slate-400 mb-2">02</p>
+                    <h3 class="font-semibold mb-2">Model</h3>
+                    <p class="text-sm text-slate-300">
+                        Decompose the system and identify actors, tasks,
+                        functions, and information requirements.
+                    </p>
+                </div>
+
+                <div class="border border-slate-700 rounded-lg p-5">
+                    <p class="text-sm font-semibold text-slate-400 mb-2">03</p>
+                    <h3 class="font-semibold mb-2">Structure</h3>
+                    <p class="text-sm text-slate-300">
+                        Map information requirements to DITA topics, reusable
+                        content, maps, and publication structures.
+                    </p>
+                </div>
+
+                <div class="border border-slate-700 rounded-lg p-5">
+                    <p class="text-sm font-semibold text-slate-400 mb-2">04</p>
+                    <h3 class="font-semibold mb-2">Publish</h3>
+                    <p class="text-sm text-slate-300">
+                        Apply profiling and publication templates to produce
+                        audience-specific WebHelp outputs.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical notes -->
+        <section class="border-t border-slate-700 pt-10">
+            <div class="max-w-4xl">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 mb-3">
+                    Technical notes
+                </p>
+
+                <p class="text-slate-300 leading-relaxed mb-4">
+                    This prototype was authored in Oxygen XML Editor using DITA
+                    and published as customized WebHelp Responsive output.
+                    The documentation source remains separate from the
+                    publication presentation layer.
+                </p>
+
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    The system is intentionally conceptual and does not
+                    represent an engineered or production-deployed energy
+                    system. Product and component behavior shown here is part
+                    of the fictional CivicGrid documentation model.
+                </p>
+            </div>
+        </section>
+
+    </section>
+</BaseLayout>

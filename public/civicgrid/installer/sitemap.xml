@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>../concepts/civicgrid-500-overview.html</loc>
+      <lastmod>2026-09-24T03:08:12Z</lastmod>
+   </url>
+   <url>
+      <loc>../concepts/system-architecture.html</loc>
+      <lastmod>2026-09-24T03:08:12Z</lastmod>
+   </url>
+   <url>
+      <loc>../concepts/major_subsystems.html</loc>
+      <lastmod>2026-09-24T03:08:12Z</lastmod>
+   </url>
+   <url>
+      <loc>../tasks/respond_to_loss_of_utility_power.html</loc>
+      <lastmod>2026-09-24T03:08:12Z</lastmod>
+   </url>
+   <url>
+      <loc>../references/civicgrid_500_operating_modes.html</loc>
+      <lastmod>2026-09-24T03:08:12Z</lastmod>
+   </url>
+</urlset>
