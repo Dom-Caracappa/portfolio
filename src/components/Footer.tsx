@@ -23,8 +23,8 @@ const Footer: React.FC = () => {
                 </ul>
 
                 {/* Right: Social Media Icons */}
-                {/* <div className="bluesky flex space-x-4 mt-4 md:mt-0">
-                    <a href="https://bsky.app/profile/fknbabbit.bsky.social" className="hover:text-blue-400" aria-label="Bluesky">
+                <div className="bluesky flex space-x-4 mt-4 md:mt-0">
+                    {/* <a href="https://bsky.app/profile/fknbabbit.bsky.social" className="hover:text-blue-400" aria-label="Bluesky">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="BlueskyLogo h-6 w-6"
